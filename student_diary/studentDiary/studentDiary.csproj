@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE177E0B-6A5E-4EFD-899A-A8234BA499D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>studentDiary</RootNamespace>
+    <AssemblyName>studentDiary</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector NET 8.3.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroupForm.Designer.cs">
+      <DependentUpon>AddGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMarksForm.Designer.cs">
+      <DependentUpon>AdminMarksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSchedule.Designer.cs">
+      <DependentUpon>AdminSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="EditGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditGroupForm.Designer.cs">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LessonCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LessonCard.Designer.cs">
+      <DependentUpon>LessonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindowStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindowStudent.Designer.cs">
+      <DependentUpon>MainWindowStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksTableStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksTableStudent.Designer.cs">
+      <DependentUpon>MarksTableStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkTableAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkTableAdmin.Designer.cs">
+      <DependentUpon>MarkTableAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentProfile.Designer.cs">
+      <DependentUpon>StudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter.Designer.cs">
+      <DependentUpon>Enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministratorProfile.Designer.cs">
+      <DependentUpon>AdministratorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentSchedule.Designer.cs">
+      <DependentUpon>StudentSchedule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddGroupForm.resx">
+      <DependentUpon>AddGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMarksForm.resx">
+      <DependentUpon>AdminMarksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSchedule.resx">
+      <DependentUpon>AdminSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditGroupForm.resx">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LessonCard.resx">
+      <DependentUpon>LessonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindowStudent.resx">
+      <DependentUpon>MainWindowStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksTableStudent.resx">
+      <DependentUpon>MarksTableStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkTableAdmin.resx">
+      <DependentUpon>MarkTableAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentProfile.resx">
+      <DependentUpon>StudentProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter.resx">
+      <DependentUpon>Enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministratorProfile.resx">
+      <DependentUpon>AdministratorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSchedule.resx">
+      <DependentUpon>StudentSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
